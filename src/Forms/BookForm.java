@@ -5,9 +5,9 @@
  */
 package Forms;
 
+import dashboard.LibrarianDashboard;
 import classes.*;
 import javax.swing.JOptionPane;
-import mainframes.*;        
         
         
 public class BookForm extends javax.swing.JFrame {
@@ -351,7 +351,7 @@ public class BookForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Your Data is Successfully Recorded!", "Data Recorded",JOptionPane.INFORMATION_MESSAGE);
         if(ok == 0){
             //to return to dashboard
-        LibrarianMain lab = new LibrarianMain();
+        LibrarianDashboard lab = new LibrarianDashboard();
         lab.setVisible(true);
         lab.dashboard().setSelectedIndex(0);
             dispose();
@@ -374,7 +374,7 @@ public class BookForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Your Data is Successfully Updated!", "Data Recorded",JOptionPane.INFORMATION_MESSAGE);
         if(ok == 0){
           //to return to dashboard
-        LibrarianMain lab = new LibrarianMain();
+        LibrarianDashboard lab = new LibrarianDashboard();
         lab.setVisible(true);
         lab.dashboard().setSelectedIndex(0);
         dispose();
@@ -386,7 +386,7 @@ public class BookForm extends javax.swing.JFrame {
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // go Backward
         dispose();
-        LibrarianMain m = new LibrarianMain();
+        LibrarianDashboard m = new LibrarianDashboard();
         m.setVisible(true);
     }//GEN-LAST:event_backBtnActionPerformed
 

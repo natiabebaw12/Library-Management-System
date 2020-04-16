@@ -1,6 +1,6 @@
 package classes;
 
-import Log.YouAre;
+import dashboard.LibrarianDashboard;
 import java.awt.BorderLayout;
 import java.awt.Color;
 
@@ -44,8 +44,8 @@ public class SplashWin extends JWindow {
         }
 
         splash.setVisible(false);
-        YouAre you = new YouAre();
-        you.youAre();
+        LibrarianDashboard show = new LibrarianDashboard();
+        show.setVisible(true);
     }
 
 }

@@ -5,9 +5,9 @@
  */
 package Forms;
 
+import dashboard.LibrarianDashboard;
 import classes.Lms_Connection;
 import classes.*;
-import mainframes.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -276,7 +276,7 @@ public class BorrowBook extends javax.swing.JFrame {
                  getMemberData();
                  
                   data.register(data);
-                LibrarianMain main = new LibrarianMain();
+                LibrarianDashboard main = new LibrarianDashboard();
                 main.setVisible(true);
                 main.dashboard().setSelectedIndex(2);
                 dispose();
@@ -290,7 +290,7 @@ public class BorrowBook extends javax.swing.JFrame {
     private void backBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtn2ActionPerformed
         // go Backward
         dispose();
-        LibrarianMain m = new LibrarianMain();
+        LibrarianDashboard m = new LibrarianDashboard();
         m.setVisible(true);
     }//GEN-LAST:event_backBtn2ActionPerformed
 

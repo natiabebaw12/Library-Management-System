@@ -1,7 +1,7 @@
 
 package Forms;
 
-import mainframes.LibrarianMain;
+import dashboard.LibrarianDashboard;
 
 
 public class ReturnBook extends javax.swing.JFrame {
@@ -19,7 +19,7 @@ public class ReturnBook extends javax.swing.JFrame {
         int book_id =Integer.parseInt( bookId.getText());
         int member_id =Integer.parseInt( memberId.getText());
         
-        LibrarianMain m = new LibrarianMain();
+        LibrarianDashboard m = new LibrarianDashboard();
         
         m.returnBook(book_id, member_id);
     }
@@ -191,7 +191,7 @@ public class ReturnBook extends javax.swing.JFrame {
 
     private void recordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recordBtnActionPerformed
         getData();
-        LibrarianMain ma = new LibrarianMain();
+        LibrarianDashboard ma = new LibrarianDashboard();
         ma.setVisible(true);
         ma.removeRetrunedBook();
         ma.selectIssuedBook();
@@ -202,7 +202,7 @@ public class ReturnBook extends javax.swing.JFrame {
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // go Backward
         dispose();
-        LibrarianMain m = new LibrarianMain();
+        LibrarianDashboard m = new LibrarianDashboard();
         m.setVisible(true);
     }//GEN-LAST:event_backBtnActionPerformed
 

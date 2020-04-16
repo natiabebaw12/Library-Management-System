@@ -1,13 +1,13 @@
 
 package Forms;
 
+import dashboard.LibrarianDashboard;
 import classes.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import javax.swing.JOptionPane;
-import mainframes.*;
 import org.jdesktop.swingx.JXDatePicker;
 
 public class MemberForm extends javax.swing.JFrame {
@@ -373,7 +373,7 @@ public class MemberForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Your Data is Successfully Recorded!", "Data Recorded",JOptionPane.INFORMATION_MESSAGE);
         if(ok == 0){
             //to return to dashboard
-          LibrarianMain lab = new LibrarianMain();
+          LibrarianDashboard lab = new LibrarianDashboard();
         lab.setVisible(true);
         lab.dashboard().setSelectedIndex(1);
             dispose();
@@ -393,7 +393,7 @@ public class MemberForm extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Your Data is Successfully Updated!", "Data Recorded",JOptionPane.INFORMATION_MESSAGE);
         if(ok == 0){
             //to return to the main dashboard
-        LibrarianMain lab = new LibrarianMain();
+        LibrarianDashboard lab = new LibrarianDashboard();
         lab.setVisible(true);
         lab.dashboard().setSelectedIndex(1);
         lab.rdo2().doClick();
@@ -418,7 +418,7 @@ public class MemberForm extends javax.swing.JFrame {
     private void backBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtn7ActionPerformed
         // go Backward
         dispose();
-        LibrarianMain m = new LibrarianMain();
+        LibrarianDashboard m = new LibrarianDashboard();
         m.setVisible(true);
     }//GEN-LAST:event_backBtn7ActionPerformed
 
