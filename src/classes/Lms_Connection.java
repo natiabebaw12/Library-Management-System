@@ -11,7 +11,7 @@ public class Lms_Connection {
     public void createConnection() {
 
         try {
-            String url = "jdbc:mysql://localhost:3306/lms";
+            String url = "jdbc:mysql://localhost:3306/lms?serverTimezone=UTC#";
             String user = "root";
             String password = "nati brown";
 
