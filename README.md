@@ -46,7 +46,7 @@ also records of issued date and return date.
 1. Use any IDE to develop the project. It may be Eclipse /Myeclipse / Netbeans etc... Ipersonally Used Netbeans for this Project.
 2. MySQL for the database (MySQL Workbench 8.0 CE).
 
-# Get Started...
+# Get Started....
 1. Import the SQL Database File to the Workbench.
 2. Import the the Project to Netbeans or any Java Ide You Would Like to Work on.
 3. Create a connection Between the Project and the Database.
